@@ -1,0 +1,97 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--clr-grey-10);
+  color: hsl(210, 36%, 96%);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+h4 {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+.modal__section img{
+        width: 100%;
+        
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.box {
+    width: 300px;
+    text-align: center;
+    background: #ddd;
+    box-shadow: 0px 0px 0px 0.3px black;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.content{
+    text-align: center;
+}
+a {
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 0;
+    background: darkblue;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 9px;
+    display: inline-block;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 18px;
+    left: 83px;
+    width: 301px;
+    height: 284px;
+    background-color: #333;
+    /* transition: all 0.3s linear; */
+    visibility: hidden;
+    z-index: -10;
+}
+
+
+.modal-container h3{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.open-modal{
+    visibility: visible;
+    z-index: 10;
+}
+button.close-btn {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-container{
+    padding: 0 20px;
+}
+.modal-container p{
+    font-size: 16px;
+    margin-top: 30px;
+}
